@@ -17,9 +17,8 @@ branches:
     - /.*/
 script:
   - dotnet build
-  - make build start-test
-  - bash Scripts/wait-until-service-is-up.sh
-  - dotnet test AlpinePdf.Test
+  - make build start
+  - make start
   - make stop
 notifications:
   email:

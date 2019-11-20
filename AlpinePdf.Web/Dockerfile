@@ -11,6 +11,7 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/reposit
         libgdiplus-dev \
         fontconfig \
         ttf-dejavu \
+        gcompat \
         curl \
         && curl -o /usr/lib/libwkhtmltox.so \
             --location \

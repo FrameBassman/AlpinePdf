@@ -15,7 +15,7 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/reposit
         curl \
         && curl -o /usr/lib/libwkhtmltox.so \
             --location \
-            https://github.com/rdvojmoc/DinkToPdf/raw/v1.0.8/v0.12.4/64%20bit/libwkhtmltox.so
+            https://github.com/rdvojmoc/DinkToPdf/raw/v1.1.0/v0.12.4/64%20bit/libwkhtmltox.so
 WORKDIR /app
 COPY --from=build-env /app/out .
 ENTRYPOINT dotnet AlpinePdf.Web.dll

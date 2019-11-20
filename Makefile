@@ -11,7 +11,7 @@ start:
 		--project-name=pdf \
 		-f docker-compose.yml \
 		up --build -d
-	bash ./Scripts/wait-until-service-is-up
+	bash ./Scripts/wait-until-service-is-up.sh
 
 test:
 	dotnet test AlpinePdf.Test

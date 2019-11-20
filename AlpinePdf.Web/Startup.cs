@@ -20,6 +20,7 @@ namespace AlpinePdf.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            new CustomAssemblyLoadContext().LoadUnmanagedLibrary("/usr/lib/libwkhtmltox.so");
             services.AddHealthChecks();
             services.AddControllers();
             services.AddHttpClient();
